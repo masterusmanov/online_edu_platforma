@@ -9,14 +9,14 @@ import Login from "../Pages/Login/Login";
 import Courses from "../Pages/Courses/Courses";
 import MyVideos from "../Pages/MyVideos/MyVideos";
 import Sertificate from "../Pages/Sertificate/Sertificate";
-import Error from "../Pages/Error/Error";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
 
     {
         path: "/",
         element: <Layout />,
-        errorElement: <Error />,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: "/",
