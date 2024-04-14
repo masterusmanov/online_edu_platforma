@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/images/LOGO.png";
 
-function Login() {
+function Register() {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
@@ -12,7 +14,9 @@ function Login() {
     console.log("Email:", email);
     console.log("Password:", password);
     // Reset form fields
+    setName("");
     setEmail("");
+    setPhone("");
     setPassword("");
   };
 
@@ -28,9 +32,26 @@ function Login() {
         <div className="mx-auto w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-              Tizimga kirish
+              Tizimga kirish uchun ro`yhatdan o`ting!
             </h1>
             <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
+            <div>
+                <label
+                  htmlFor="name"
+                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >
+                  To`liq Ismingiz
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Ismingizni kiriting!"
+                  required
+                />
+              </div>
               <div>
                 <label
                   htmlFor="email"
@@ -45,6 +66,23 @@ function Login() {
                   onChange={(e) => setEmail(e.target.value)}
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="name@company.com"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >
+                  Telefon raqamingiz
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="+998901234567"
                   required
                 />
               </div>
@@ -65,28 +103,6 @@ function Login() {
                   required
                 />
               </div>
-              <div className="flex items-center justify-between">
-                <div className="flex items-start">
-                  <input
-                    id="remember"
-                    type="checkbox"
-                    className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
-                    required
-                  />
-                  <label
-                    htmlFor="remember"
-                    className="ml-3 text-sm text-gray-500 dark:text-gray-300"
-                  >
-                    Remember me
-                  </label>
-                </div>
-                <a
-                  href="#"
-                  className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
-                >
-                  Parol esingizdan chiqdimi?
-                </a>
-              </div>
               <button
                 type="submit"
                 className="w-full text-white bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -94,8 +110,8 @@ function Login() {
                 Kirish
               </button>
               <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-              Hali hisobingiz yo`qmi?{" "}
-                <NavLink to='/register' className="font-medium text-blue-600 hover:underline dark:text-blue-500">Ro`yhatdan o`tish</NavLink>
+              Hisobingiz bormi?{" "}
+                <NavLink to='/login' className="font-medium text-blue-600 hover:underline dark:text-blue-500">Tizimga kirish</NavLink>
               </p>
             </form>
           </div>
@@ -105,4 +121,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;

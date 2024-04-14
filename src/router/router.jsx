@@ -10,6 +10,7 @@ import Courses from "../Pages/Courses/Courses";
 import MyVideos from "../Pages/MyVideos/MyVideos";
 import Sertificate from "../Pages/Sertificate/Sertificate";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import Register from "../Pages/Register/Register";
 
 const router = createBrowserRouter([
 
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
     {
         path: "/login",
         element: <Login />,
+    },
+    {
+        path: "/register",
+        element: <Register />,
     }
 ]);
 
