@@ -114,7 +114,7 @@ function Monitoring() {
                 <div className=" grid justify-center md:flex flex-wrap md:justify-start gap-4 mt-[20px] md:max-h-[28vh] md:overflow-y-auto lg:gap-4 lg:justify-center xl:justify-start xl:max-h-[165px] xl:overflow-y-auto 2xl:max-h-[245px] 2xl:overflow-y-auto">
                     {cards.map(item => (
                         // eslint-disable-next-line react/jsx-key
-                        <div className="md:w-[150px] border grid gap-4 bg-[#F7F7F5] p-3 rounded-lg lg:flex lg:w-[185px] lg:gap-1 xl:w-[300px] xl:gap-6 2xl:grid 2xl:w-[370px]">
+                        <div className="md:w-[150px] border grid gap-4 bg-[#F7F7F5] p-3 rounded-lg lg:flex lg:w-[185px] lg:gap-1 xl:w-[300px] xl:gap-6 2xl:grid 2xl:w-[370px] hover:shadow-xl hover:shadow-gray-500">
                             <img src={item.img} alt="" className="rounded-lg md:w-[150px] md:h-[80px] lg:w-[90px] lg:h-[50px] object-cover lg:object-fill xl:w-[130px] xl:h-[60px] 2xl:w-full 2xl:h-[200px]"/>
                             <div>
                                 <h1 className="font-[700] text-[18px] lg:text-[14px] 2xl:text-[18px]">{item.title}</h1>
