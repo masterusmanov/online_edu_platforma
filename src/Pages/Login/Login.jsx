@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/images/LOGO.png";
+import pattern from '../../assets/images/login/pattern.svg'
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -18,16 +19,17 @@ function Login() {
 
   return (
     <div className="flex items-center justify-between bg-gray-100 h-screen">
-      <div className="hidden lg:block w-1/2  ">
+      <div className="hidden lg:block w-1/2 ">
         <img src={Logo} alt="" className="w-1/2 object-cover mx-auto" />
         <h1 className="text-blue-500 font-[700] text-center text-[112px]">
           IT school
         </h1>
       </div>
-      <div className="w-full lg:w-1/2">
-        <div className="mx-auto w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+      <div className="w-full lg:w-1/2 bg-white h-screen">
+        <img src={pattern} alt="" className="absolute md:mx-[5px]"/>
+        <div className="mx-auto w-full  rounded-lg  dark:border  sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 mt-[120px] md:mt-[200px] lg:mt-[100px] relative xl:mt-[150px] 2xl:mt-[220px]">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-            <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+            <h1 className="text-[30px] font-bold text-gray-900 text-center">
               Tizimga kirish
             </h1>
             <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>

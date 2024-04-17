@@ -86,7 +86,7 @@ export default function MyCourses(){
                 <div className=" grid justify-center md:flex flex-wrap md:justify-start gap-4 mt-[20px] lg:max-h-[201px] lg:overflow-y-auto xl:max-h-[335px]">
                     {cards.map(item => (
                         // eslint-disable-next-line react/jsx-key
-                        <div className="md:w-[250px] border grid gap-4 bg-[#F7F7F5] p-3 rounded-lg xl:w-[300px] 2xl:w-[370px] ">
+                        <div className="md:w-[250px] border grid gap-4 bg-[#F7F7F5] p-3 rounded-lg xl:w-[300px] 2xl:w-[370px]">
                             <img src={item.img} alt="" className="rounded-lg md:w-[250px] md:h-[150px]  object-cover xl:w-full 2xl:h-[200px]"/>
                             <div>
                                 <h1 className="font-[700] text-[18px] lg:text-[14px] 2xl:text-[18px]">{item.title}</h1>
