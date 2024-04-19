@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/images/LOGO.png";
 import pattern from '../../assets/images/login/pattern.svg'
+import './Registr.css'
 
 function Register() {
   const [name, setName] = useState("");
@@ -23,11 +24,8 @@ function Register() {
 
   return (
     <div className="flex items-center justify-between bg-gray-100 h-screen ">
-      <div className="hidden lg:block w-1/2  bg-gray-100">
-        <img src={Logo} alt="" className="w-1/2 object-cover mx-auto" />
-        <h1 className="text-blue-500 font-[700] text-center text-[112px]">
-          IT school
-        </h1>
+      <div className="dubl h-screen hidden lg:block w-1/2  bg-gray-100 ">
+        <img src={Logo} alt="" className="w-1/2 mx-[260px] my-[220px] xl:mx-[310px] xl:my-[250px] 2xl:mx-[420px] 2xl:my-[350px]" />
       </div>
       <div className="w-full lg:w-1/2 h-screen bg-white">
         <img src={pattern} alt="" className="absolute  md:mx-[5px]"/>
