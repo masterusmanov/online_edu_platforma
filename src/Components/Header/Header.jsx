@@ -34,8 +34,7 @@ export default function Header(){
                 </Modal>
             </div>
             <div className='flex items-center gap-3 md:px-5'>
-                <img src={LOGO} alt="" className='w-[60px]'/>
-                <h1 className='w-[180px] text-blue-600 text-[34px] font-bold'>IT school</h1>
+                <img src={LOGO} alt="" className='w-[150px]'/>
             </div>
             <div className='flex p-2 md:hidden'>
                     <i className='bx bx-bell text-[24px] text-gray-500'></i>
