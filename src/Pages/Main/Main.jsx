@@ -1,10 +1,11 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Video from '../../assets/images/Main/Video.png';
 import foundation from '../../assets/images/Main/foundation.jpg';
 import react from '../../assets/images/Main/reactjs.png';
 import python from '../../assets/images/Main/django.jpg';
 import design from '../../assets/images/Main/design.png';
-import { NavLink } from "react-router-dom";
+import komp from '../../assets/images/Main/komp.png'
 
 
 function Monitoring() {
@@ -38,53 +39,60 @@ function Monitoring() {
     return(
         <div>
             <div className="bg-white h-[50px] flex items-center">
-                <h1 className=" px-5 md:px-10 py-5">Bosh sahifa</h1>
+                <h1 className=" px-5 md:px-10 py-5 font-[600]">Bosh sahifa</h1>
             </div>
             <div className="md:flex gap-4">
-                    <div className="md:w-[70%] m-5 md:ml-5 md:my-5 p-5 bg-white  rounded-md xl:grid gap-4">
-                        <div className="grid gap-2 lg:flex  md:gap-0 items-center justify-between text-[14px] lg:text-[12px]">
-                            <div>
-                                <h1>So`ngi ko`rilgan</h1>
-                            </div>
-                            <div className="lg:flex items-center gap-1 text-blue-500">
-                                <p>Ko`rilgan kurslar nomi / </p>
-                                <p>Ko`rilgan kurslar nomi </p>
-                            </div>
+                <div className="hidden md:w-[70%] m-5 md:ml-5 md:my-5 p-5 bg-white  rounded-md gap-4">
+                    <div className="grid gap-2 lg:flex  md:gap-0 items-center justify-between text-[14px] lg:text-[12px]">
+                        <div>
+                            <h1>So`ngi ko`rilgan</h1>
                         </div>
-                        <div className="grid gap-4">
-                            <div className="grid lg:flex gap-4 lg:gap-6 mt-[15px] bg-[#F9F9F9] p-4 rounded-lg">
-                                <div>
-                                    <img src={Video} alt="" className="md:w-[180px] xl:w-[200px] 2xl:w-full"/>
-                                </div>
-                                <div className="">
-                                    <h1 className="font-[700] text-[16px] md:text-[14px] lg:text-[16px]">Kompyuter nimalardan iborat?</h1>
-                                    <div className="flex gap-4 text-[12px] lg:text-[14px] lg:py-2">
-                                        <div className="text-gray-500 lg:grid gap-4">
-                                            <p>• Kurs:</p>
-                                            <p>• Modul:</p>
-                                            <p>• Mavzu:</p>
-                                        </div>
-                                        <div className="lg:grid gap-4">
-                                            <p>Kompyuter savodxonligi kursi</p>
-                                            <p>Kompyuter savodxonligi darslari</p>
-                                            <p>Kompyuter</p>
-                                        </div>
+                        <div className="lg:flex items-center gap-1 text-blue-500">
+                            <p>Ko`rilgan kurslar nomi / </p>
+                            <p>Ko`rilgan kurslar nomi </p>
+                        </div>
+                    </div>
+                    <div className="grid gap-4">
+                        <div className="grid lg:flex gap-4 lg:gap-6 mt-[15px] bg-[#F9F9F9] p-4 rounded-lg">
+                            <div>
+                                <img src={Video} alt="" className="md:w-[180px] xl:w-[200px] 2xl:w-full"/>
+                            </div>
+                            <div className="">
+                                <h1 className="font-[700] text-[16px] md:text-[14px] lg:text-[16px]">Kompyuter nimalardan iborat?</h1>
+                                <div className="flex gap-4 text-[12px] lg:text-[14px] lg:py-2">
+                                    <div className="text-gray-500 lg:grid gap-4">
+                                        <p>• Kurs:</p>
+                                        <p>• Modul:</p>
+                                        <p>• Mavzu:</p>
+                                    </div>
+                                    <div className="lg:grid gap-4">
+                                        <p>Kompyuter savodxonligi kursi</p>
+                                        <p>Kompyuter savodxonligi darslari</p>
+                                        <p>Kompyuter</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="grid gap-1">
-                                <h1 className="text-[10px]">15% videodars yakunlangan</h1>
-                                <div className="w-full h-[5px] rounded-full bg-neutral-200 dark:bg-neutral-600">
-                                    <div className="h-[5px] bg-blue-500 rounded-full text-white" style={{ width: "15%" }}></div>
-                                </div>
+                        </div>
+                        <div className="grid gap-1">
+                            <h1 className="text-[10px]">15% videodars yakunlangan</h1>
+                            <div className="w-full h-[5px] rounded-full bg-neutral-200 dark:bg-neutral-600">
+                                <div className="h-[5px] bg-blue-500 rounded-full" style={{ width: "15%" }}></div>
                             </div>
                         </div>
                     </div>
-                    <div className="md:w-[70%] m-5 md:ml-5 md:my-5 p-5 bg-white  rounded-md xl:grid gap-4">
-                        <h1 className="font-[700] text-[24px]">Assalomu alaykum UserName! <br /> Xush kelibsiz!</h1>
-                        <p>Sizda hozirda hech qanday kurs mavjud emas, “Barcha kurslar” bo‘limidan o‘zingizga ma’qul kursni xarid qilishingiz mumkin</p>
-                        <NavLink to="#" className="py-1 px-3 bg-blue-500">Barcha kurslar bo`limiga o`tish</NavLink>
+                </div>
+                <div className="md:w-[70%] m-5 md:ml-5 md:my-5 p-5 bg-white  rounded-md lg:flex items-center gap-4">
+                    <div className="lg:w-1/2 lg:grid gap-4 2xl:gap-12">
+                        <h1 className="font-[700] text-[18px] lg:text-[20px] xl:text-[28px]">Assalomu alaykum UserName! <br /> Xush kelibsiz!</h1>
+                        <p className="text-[12px] mt-[5px] xl:text-[16px]">Sizda hozirda hech qanday kurs mavjud emas, “Barcha kurslar” bo‘limidan o‘zingizga ma’qul kursni xarid qilishingiz mumkin</p>
+                        <div className="mt-[20px]">
+                            <NavLink to="#" className="py-2 px-4 bg-blue-500 text-white rounded-full text-[14px] xl:text-[16px]">Barcha kurslar bo`limiga o`tish</NavLink>
+                        </div>
                     </div>
+                    <div className="mt-[25px] lg:w-1/2">
+                        <img src={komp} alt="img" className="w-[180px] mx-auto lg:w-[220px] xl:w-[250px] 2xl:w-[350px]"/>
+                    </div>
+                </div>
                 <div className=" w-[30%] my-5 mr-2 p-3 hidden md:grid bg-white gap-4 rounded-md">
                     <div className="grid gap-3 lg:gap-2 bg-[#F7F7F5] p-2 rounded-lg">
                         <h1 className="text-gray-500 text-[12px]">Tavsiya etamiz:</h1>
@@ -109,7 +117,7 @@ function Monitoring() {
                     </div>
                 </div>
             </div>
-            <div className="ml-5 mr-2 p-5 bg-white rounded-md">
+            <div className="ml-5 mr-5 md:mr-2 p-5 bg-white rounded-md">
                 <div className="md:flex gap-2 md:gap-0 items-center justify-between text-[14px]">
                     <div>
                         <h1>Sizga tavsiya qilamiz</h1>

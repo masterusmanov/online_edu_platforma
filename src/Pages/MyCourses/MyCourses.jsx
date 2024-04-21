@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import savodxon from "../../assets/images/my_courses/savodxon.jpg";
 import foundation from '../../assets/images/Main/foundation.jpg'
 import react from '../../assets/images/Main/reactjs.png'
@@ -36,7 +37,7 @@ export default function MyCourses(){
     return(
        <div className="">
             <div className="bg-white h-[50px] flex items-center">
-                <h1 className=" px-5 md:px-10 py-5">Mening kurslarim</h1>
+                <h1 className=" px-5 md:px-10 py-5 font-[600]">Mening kurslarim</h1>
             </div>
             <div className="max-h-screen overflow-y-auto">
                 <div className="m-5 p-5 bg-white rounded-md lg:flex justify-between ">
@@ -74,10 +75,21 @@ export default function MyCourses(){
                         </div>
                     </div>
                 </div>
+                <div className="m-5 p-5 bg-white rounded-md ">
+                    <div>
+                        <h1 className="font-[700] text-[18px]">Mening kurslarim</h1>
+                    </div>
+                    <div className="text-center my-[50px]">
+                        <h2 className="text-[18px] text-gray-400">Hozirda sizda hech qanday kurs mavjud emas</h2>
+                        <div className="mt-[20px]">
+                            <NavLink to="#" className="py-2 px-4 bg-blue-500 text-white rounded-full text-[14px] xl:text-[16px]">Kurslar xarid qilish</NavLink>
+                        </div>
+                    </div>
+                </div>
                 <div className="m-5 p-5 bg-white rounded-md">
                 <div className="md:flex gap-2 md:gap-0 items-center justify-between text-[14px]">
                     <div>
-                        <h1>Sizga tavsiya qilamiz</h1>
+                        <h1 className="font-[700] text-[18px]">Sizga tavsiya qilamiz</h1>
                     </div>
                     <div className="lg:flex items-center gap-1 text-blue-500">
                         <p>Barcha kurslarni ko`rish</p>
