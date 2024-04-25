@@ -11,6 +11,7 @@ import MyVideos from "../Pages/MyVideos/MyVideos";
 import Sertificate from "../Pages/Sertificate/Sertificate";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Register from "../Pages/Register/Register";
+import Theme from "../Pages/Theme/Theme";
 
 const router = createBrowserRouter([
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
             {
                 path: "/sertificate",
                 element: <Sertificate />,
+            },
+            {
+                path: "/theme",
+                element: <Theme />,
             },
 
         ]

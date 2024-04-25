@@ -42,7 +42,7 @@ function Monitoring() {
                 <h1 className=" px-5 md:px-10 py-5 font-[600]">Bosh sahifa</h1>
             </div>
             <div className="md:flex gap-4">
-                <div className="hidden md:w-[70%] m-5 md:ml-5 md:my-5 p-5 bg-white  rounded-md gap-4">
+                <div className="md:w-[70%] m-5 md:ml-5 md:my-5 p-5 bg-white  rounded-md gap-4">
                     <div className="grid gap-2 lg:flex  md:gap-0 items-center justify-between text-[14px] lg:text-[12px]">
                         <div>
                             <h1>So`ngi ko`rilgan</h1>
@@ -57,10 +57,10 @@ function Monitoring() {
                             <div>
                                 <img src={Video} alt="" className="md:w-[180px] xl:w-[200px] 2xl:w-full"/>
                             </div>
-                            <div className="">
+                            <NavLink to="theme" className="">
                                 <h1 className="font-[700] text-[16px] md:text-[14px] lg:text-[16px]">Kompyuter nimalardan iborat?</h1>
                                 <div className="flex gap-4 text-[12px] lg:text-[14px] lg:py-2">
-                                    <div className="text-gray-500 lg:grid gap-4">
+                                    <div className="text-gray-500 lg:grid gap-4 font-[700]">
                                         <p>• Kurs:</p>
                                         <p>• Modul:</p>
                                         <p>• Mavzu:</p>
@@ -71,7 +71,7 @@ function Monitoring() {
                                         <p>Kompyuter</p>
                                     </div>
                                 </div>
-                            </div>
+                            </NavLink>
                         </div>
                         <div className="grid gap-1">
                             <h1 className="text-[10px]">15% videodars yakunlangan</h1>
@@ -81,7 +81,7 @@ function Monitoring() {
                         </div>
                     </div>
                 </div>
-                <div className="md:w-[70%] m-5 md:ml-5 md:my-5 p-5 bg-white  rounded-md lg:flex items-center gap-4">
+                {/* <div className="md:w-[70%] m-5 md:ml-5 md:my-5 p-5 bg-white  rounded-md lg:flex items-center gap-4">
                     <div className="lg:w-1/2 lg:grid gap-4 2xl:gap-12">
                         <h1 className="font-[700] text-[18px] lg:text-[20px] xl:text-[28px]">Assalomu alaykum UserName! <br /> Xush kelibsiz!</h1>
                         <p className="text-[12px] mt-[5px] xl:text-[16px]">Sizda hozirda hech qanday kurs mavjud emas, “Barcha kurslar” bo‘limidan o‘zingizga ma’qul kursni xarid qilishingiz mumkin</p>
@@ -92,7 +92,7 @@ function Monitoring() {
                     <div className="mt-[25px] lg:w-1/2">
                         <img src={komp} alt="img" className="w-[180px] mx-auto lg:w-[220px] xl:w-[250px] 2xl:w-[350px]"/>
                     </div>
-                </div>
+                </div> */}
                 <div className=" w-[30%] my-5 mr-2 p-3 hidden md:grid bg-white gap-4 rounded-md">
                     <div className="grid gap-3 lg:gap-2 bg-[#F7F7F5] p-2 rounded-lg">
                         <h1 className="text-gray-500 text-[12px]">Tavsiya etamiz:</h1>
