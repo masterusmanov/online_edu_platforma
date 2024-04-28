@@ -1,8 +1,14 @@
+// eslint-disable-next-line no-unused-vars
 import React, {useState} from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Routes, Route } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import ReactPlayer from 'react-player';
 import ModalTwo from "../../Components/Modal/ModalTwo";
 import MyForm from "../../Components/Forms/Forms";
+import Topic from "../../Components/Navbar/Topic";
+import NavbarTwo from "../../Components/Navbar/NavbarTwo";
+import Notes from '../../Components/Navbar/Notes';
+import Comment from "../../Components/Navbar/Comment";
 
 export default function Theme(){
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -22,7 +28,7 @@ export default function Theme(){
     return(
         <div>
             <div className="bg-white h-[50px] flex items-center p-5">
-                <NavLink to="programcourse"><i className='bx bx-chevron-left text-[24px] bg-gray-200 rounded-full'></i></NavLink>
+                <NavLink to="/programcourse"><i className='bx bx-chevron-left text-[24px] bg-gray-200 rounded-full'></i></NavLink>
                 <h1 className=" px-5 md:px-10 py-5 font-[600]">Mavzular</h1>
             </div>
             <div className="m-5 h-[77.5vh] rounded-lg overflow-y-scroll flex flex-col gap-4">
@@ -39,6 +45,9 @@ export default function Theme(){
                     <ModalTwo isOpen={isModalOpen} onClose={closeModal}>
                         <MyForm onSubmit={handleFormSubmit} />
                     </ModalTwo>
+                </div>
+                <div className="bg-white p-5">
+                    <NavbarTwo/>
                 </div>
             </div>
         </div>

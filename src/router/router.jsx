@@ -42,9 +42,8 @@ const router = createBrowserRouter([
             },
             {
                 path: "/theme",
-                element: <Theme />,
-            },
-
+                element: <Theme />
+            }
         ]
     },
     {

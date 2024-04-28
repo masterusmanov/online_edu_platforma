@@ -21,7 +21,7 @@ const Star = () => {
                 <>
                     <label >
                         <input type="radio" name='rate' value={currentRate} onClick={() => handleRatingChange(currentRate)} className='hidden'/>
-                        <FaStar size={50} color={currentRate <=(ratecolor || rating) ? "yellow" : "gray"}/>
+                        <FaStar size={35} color={currentRate <=(ratecolor || rating) ? "yellow" : "gray"}/>
                     </label>
                 </>
             )
