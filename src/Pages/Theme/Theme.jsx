@@ -43,12 +43,12 @@ export default function Theme(){
     return `${hours > 0 ? hours + ':' : '00:'}${minutes}:${seconds}`;
   };
     return(
-        <div>
+        <div className="">
             <div className="bg-white h-[50px] flex items-center p-5">
                 <NavLink to="/programcourse"><i className='bx bx-chevron-left text-[24px] bg-gray-200 rounded-full'></i></NavLink>
                 <h1 className=" px-5 md:px-10 py-5 font-[600]">Mavzular</h1>
             </div>
-            <div className="m-5 h-[77.5vh] rounded-lg overflow-y-scroll flex flex-col gap-4">
+            <div className="m-5 h-[77.5vh] md:h-[82.5vh] lg:h-[73.5vh] xl:h-[78vh] 2xl:h-[83vh] rounded-lg overflow-y-scroll flex flex-col gap-4">
                 <div className="rounded-lg">
                     {/* <ReactPlayer width='100%'  url='https://youtu.be/iu-LBY7NXD4?si=koebezIgy95ePb3T' controls muted/>
                     <video className="w-[200px] h-[100px]" controls><source src={videos}/></video> */}
