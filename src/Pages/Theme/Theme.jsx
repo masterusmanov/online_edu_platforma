@@ -1,17 +1,17 @@
 // eslint-disable-next-line no-unused-vars
-import React, {useState} from "react";
-import { NavLink, Routes, Route } from "react-router-dom";
-import { Outlet, useNavigate } from "react-router-dom";
-import ReactPlayer from 'react-player';
+import React, { useRef, useState } from "react";
+import { NavLink } from "react-router-dom";
+// import ReactPlayer from 'react-player';
 import ModalTwo from "../../Components/Modal/ModalTwo";
 import MyForm from "../../Components/Forms/Forms";
-import Topic from "../../Components/Navbar/Topic";
 import NavbarTwo from "../../Components/Navbar/NavbarTwo";
-import Notes from '../../Components/Navbar/Notes';
-import Comment from "../../Components/Navbar/Comment";
+import mansur from '../../assets/images/100.mp4';
+
 
 export default function Theme(){
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const videoRef = useRef(null);
+    const [videoDuration, setVideoDuration] = useState(null);
 
     const openModal = () => {
         setIsModalOpen(true);
@@ -25,6 +25,23 @@ export default function Theme(){
         console.log('Form submitted:', formData);
         closeModal(); 
     };
+
+
+  const handleLoadedMetadata = () => {
+    if (videoRef.current) {
+      const durationInSeconds = Math.floor(videoRef.current.duration);
+      setVideoDuration(formatDuration(durationInSeconds));
+    }
+  };
+
+  const formatDuration = (totalSeconds) => {
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+    const timer = `${hours > 0 ? hours + ':' : '00:'}${minutes}:${seconds}`
+    localStorage.setItem('videotime', timer)
+    return `${hours > 0 ? hours + ':' : '00:'}${minutes}:${seconds}`;
+  };
     return(
         <div>
             <div className="bg-white h-[50px] flex items-center p-5">
@@ -33,8 +50,11 @@ export default function Theme(){
             </div>
             <div className="m-5 h-[77.5vh] rounded-lg overflow-y-scroll flex flex-col gap-4">
                 <div className="rounded-lg">
-                    <ReactPlayer width='100%'  url='https://youtu.be/iu-LBY7NXD4?si=koebezIgy95ePb3T' controls muted/>
-                    {/* <video className="w-[200px] h-[100px]" controls><source src={videos}/></video> */}
+                    {/* <ReactPlayer width='100%'  url='https://youtu.be/iu-LBY7NXD4?si=koebezIgy95ePb3T' controls muted/>
+                    <video className="w-[200px] h-[100px]" controls><source src={videos}/></video> */}
+                    <video ref={videoRef} onLoadedMetadata={handleLoadedMetadata} className="w-full h-[50vh]" controls ><source src={mansur} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <div className="bg-white">
                     <div className="flex items-center justify-between p-5">
