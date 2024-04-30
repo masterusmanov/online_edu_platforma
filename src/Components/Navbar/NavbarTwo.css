@@ -1,0 +1,6 @@
+button.active {
+    border-bottom: 2px solid #77BF44;
+    font-weight: bold;
+    color: rgb(58, 57, 57);
+    /* Add more styles to make the active button visually distinct */
+  }
