@@ -117,10 +117,9 @@ export default function Theme(){
                         </div>
                     </div>
                 </div>
-                <div className="hidden lg:block my-5 lg:my-0 lg:w-[350px] bg-white">
+                <div className="hidden lg:block p-5 ml-5 rounded-lg w-[350px] bg-white h-[73.5vh] xl:h-[78vh] 2xl:h-[83vh] overflow-y-scroll">
                     <h1 className='text-[#77BF44] font-[700] text-[14px]'>Kompyuter savodxonligi darslari</h1>
                     <div>
-                        <h1 className="text-2xl font-bold mb-4">Accordion Example</h1>
                         <Accordion items={items} />
                     </div>
                 </div>

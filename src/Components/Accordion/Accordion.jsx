@@ -36,7 +36,7 @@ const Accordion = ({ items }) => {
                 ) : (
                     <p role="img" aria-label="not-viewed" style={{ fontSize: '16px' }}><i className='bx bx-play-circle bg-gray-200 p-1 rounded-full'></i></p>
                 )}
-              <span>{item.content}</span>
+              <span className='text-[14px]'>{item.content}</span>
             </div>
           )}
         </div>
