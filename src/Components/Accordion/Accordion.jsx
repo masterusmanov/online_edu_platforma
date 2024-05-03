@@ -35,7 +35,7 @@ const Accordion = ({ items }) => {
                 // eslint-disable-next-line react/jsx-key
                 <div className="p-4 flex items-center gap-4">
                     {isViewed ? (
-                        <p role="img" aria-label="viewed" style={{ fontSize: '16px' }}><i className='bx bx-check bg-[#77BF44] p-1 rounded-full text-white'></i></p>
+                        <p role="img" aria-label="viewed" style={{ fontSize: '16px' }}><i className='bx bx-check bg-[#77BF44] rounded-full text-white'></i></p>
                     ) : (
                         <p role="img" aria-label="not-viewed" style={{ fontSize: '16px' }}><i className='bx bx-play-circle bg-gray-200 p-1 rounded-full'></i></p>
                     )}
