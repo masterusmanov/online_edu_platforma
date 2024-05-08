@@ -25,25 +25,25 @@ export default function ProgrammCourse(){
                         </div>
                     </div>
                     <div className="bg-[#F9F9F9] p-5 rounded-lg ">
-                        <div className="flex flex-wrap justify-between gap-3 mx-auto">
-                            <div className="w-[47%]">
-                                <i className='bx bx-server text-[48px] text-gray-500'></i>
-                                <h1 className="text-[14px] font-[700] text-gray-500">Modullar soni</h1>
+                        <div className="flex flex-wrap lg:flex-nowrap justify-between lg:justify-start gap-3 mx-auto lg:gap-6 border-b-2 border-gray-400 p-2 pb-5">
+                            <div className="w-[47%] lg:w-auto">
+                                <i className='bx bx-server text-[48px] text-gray-500 lg:text-[55px]'></i>
+                                <h1 className="text-[14px] font-[700] text-gray-500 lg:text-[16px]">Modullar soni</h1>
                                 <p className="text-[#77BF44] font-[700]">Nta</p>
                             </div>
-                            <div className="w-[47%]">
-                                <i className='bx bx-list-ul text-[48px] text-gray-500'></i>
-                                <h1 className="text-[14px] font-[700] text-gray-500">Mavzular soni</h1>
+                            <div className="w-[47%] lg:w-auto">
+                                <i className='bx bx-list-ul text-[48px] text-gray-500 lg:text-[55px]'></i>
+                                <h1 className="text-[14px] font-[700] text-gray-500 lg:text-[16px]">Mavzular soni</h1>
                                 <p className="text-[#77BF44] font-[700]">Nta</p>
                             </div>
-                            <div className="w-[47%]">
-                                <i className='bx bx-movie-play text-[48px] text-gray-500'></i>
-                                <h1 className="text-[14px] font-[700] text-gray-500">Darslar soni</h1>
+                            <div className="w-[47%] lg:w-auto">
+                                <i className='bx bx-movie-play text-[48px] text-gray-500 lg:text-[55px]'></i>
+                                <h1 className="text-[14px] font-[700] text-gray-500 lg:text-[16px]">Darslar soni</h1>
                                 <p className="text-[#77BF44] font-[700]">Nta</p>
                             </div>
-                            <div className="w-[47%]">
-                                <i className='bx bx-calendar text-[48px] text-gray-500'></i>
-                                <h1 className="text-[14px] font-[700] text-gray-500">Mavzular soni</h1>
+                            <div className="w-[47%] lg:w-auto">
+                                <i className='bx bx-calendar text-[48px] text-gray-500 lg:text-[55px]'></i>
+                                <h1 className="text-[14px] font-[700] text-gray-500 lg:text-[16px]">Mavzular soni</h1>
                                 <p className="text-[#77BF44] font-[700]">N soat N daqiqa</p>
                             </div>
                         </div>
