@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import savodxon from '../../assets/images/Main/savodxon.png'
+import AccordionTwoOne from "../../Components/Accordion/AccordionTwoOne";
 
 
 export default function ProgrammCourse(){
@@ -46,6 +47,9 @@ export default function ProgrammCourse(){
                                 <h1 className="text-[14px] font-[700] text-gray-500 lg:text-[16px]">Mavzular soni</h1>
                                 <p className="text-[#77BF44] font-[700]">N soat N daqiqa</p>
                             </div>
+                        </div>
+                        <div>
+                            <AccordionTwoOne/>
                         </div>
                     </div>
                 </div>
