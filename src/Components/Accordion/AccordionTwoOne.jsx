@@ -3,14 +3,17 @@ import React from 'react';
 import AccordionTwo from './AccordionTwo';
 
 const AccordionTwoOne = () => {
+    const lesson = localStorage.getItem("lesson")
   const panels = [
     {
-      title: 'Panel 1',
+        id: 1,
+        title: 'Kompyuter savodxonligi darslari',
+        lesson: lesson
     }
   ]
   return (
     <div className="app">
-      <h1>Accordion Example</h1>
+      
       <AccordionTwo panels={panels} />
     </div>
   );

@@ -201,6 +201,7 @@ const items = [
 const AccordionTwo = ({ panels }) => {
     
   const [activeIndex, setActiveIndex] = useState(null);
+  localStorage.setItem("lesson", items.length)
 
   const togglePanel = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -210,11 +211,12 @@ const AccordionTwo = ({ panels }) => {
     <div className="accordion">
       {panels.map((panel, index) => (
         <div key={index} className="accordion-item">
-          <div
-            className={`accordion-title ${activeIndex === index ? 'active' : ''}`}
-            onClick={() => togglePanel(index)}
-          >
-            {panel.title}
+          <div className={`accordion-title ${activeIndex === index ? 'active' : ''} flex justify-between items-center gap-4 p-2 lg:p-5`} onClick={() => togglePanel(index)} >
+            <div className='w-full flex justify-between items-center text-[14px] font-[700] xl:text-[16px]'>
+                <h1> {panel.title}</h1>
+                <p>{panel.lesson}ta dars</p>
+            </div>
+            <span className='text-[14px] text-[#77BF44]'>{activeIndex === index ? '▲' : '▼'}</span>
           </div>
           {activeIndex === index && (
             <div className="accordion-content">
