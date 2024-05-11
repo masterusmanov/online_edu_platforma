@@ -47,7 +47,7 @@ function Monitoring() {
                         <div>
                             <h1>So`ngi ko`rilgan</h1>
                         </div>
-                        <div className="lg:flex items-center gap-1 text-blue-500">
+                        <div className="lg:flex items-center gap-1 text-[#77BF44]">
                             <p>Ko`rilgan kurslar nomi / </p>
                             <p>Ko`rilgan kurslar nomi </p>
                         </div>
@@ -76,7 +76,7 @@ function Monitoring() {
                         <div className="grid gap-1">
                             <h1 className="text-[10px]">15% videodars yakunlangan</h1>
                             <div className="w-full h-[5px] rounded-full bg-neutral-200 dark:bg-neutral-600">
-                                <div className="h-[5px] bg-blue-500 rounded-full" style={{ width: "15%" }}></div>
+                                <div className="h-[5px] bg-[#77BF44] rounded-full" style={{ width: "15%" }}></div>
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ function Monitoring() {
                         <h1 className="font-[700] text-[18px] lg:text-[20px] xl:text-[28px]">Assalomu alaykum UserName! <br /> Xush kelibsiz!</h1>
                         <p className="text-[12px] mt-[5px] xl:text-[16px]">Sizda hozirda hech qanday kurs mavjud emas, “Barcha kurslar” bo‘limidan o‘zingizga ma’qul kursni xarid qilishingiz mumkin</p>
                         <div className="mt-[20px]">
-                            <NavLink to="#" className="py-2 px-4 bg-blue-500 text-white rounded-full text-[14px] xl:text-[16px]">Barcha kurslar bo`limiga o`tish</NavLink>
+                            <NavLink to="#" className="py-2 px-4 bg-[#77BF44] text-white rounded-full text-[14px] xl:text-[16px]">Barcha kurslar bo`limiga o`tish</NavLink>
                         </div>
                     </div>
                     <div className="mt-[25px] lg:w-1/2">
@@ -98,11 +98,11 @@ function Monitoring() {
                         <h1 className="text-gray-500 text-[12px]">Tavsiya etamiz:</h1>
                         <img src={foundation} alt="" className="w-[150px] lg:w-[120px] xl:w-[180px] mx-auto rounded-lg 2xl:w-full"/>
                         <p className="font-[700] text-[11px]">Foundation kursini o`rganish uchun bepul manbalar</p>
-                        <a href="#" className="text-[11px] text-blue-500">Batafsil</a>
+                        <a href="#" className="text-[11px] text-[#77BF44]">Batafsil</a>
                     </div>
                     <div className="grid gap-3 bg-[#F7F7F5] p-2 rounded-lg">
                         <div className="flex gap-2">
-                            <i className='bx bx-code-block text-blue-500'></i>
+                            <i className='bx bx-code-block text-[#77BF44]'></i>
                             <div>
                                 <h2 className="font-[700] text-[11px]">Kompyuter savodxonligi kursi</h2>
                                 <p className="text-gray-500 text-[11px]">Boshqa</p>
@@ -111,7 +111,7 @@ function Monitoring() {
                         <div>
                             <h1 className="text-[10px]">4% videodarslar yakunlangan</h1>
                             <div className="w-full h-[5px] rounded-full bg-neutral-200 dark:bg-neutral-600">
-                                <div className="h-[5px] bg-blue-500 rounded-full" style={{ width: "4%" }}></div>
+                                <div className="h-[5px] bg-[#77BF44] rounded-full" style={{ width: "4%" }}></div>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ function Monitoring() {
                     <div>
                         <h1>Sizga tavsiya qilamiz</h1>
                     </div>
-                    <div className="lg:flex items-center gap-1 text-blue-500">
+                    <div className="lg:flex items-center gap-1 text-[#77BF44]">
                         <p>Barcha kurslarni ko`rish</p>
                     </div>
                 </div>

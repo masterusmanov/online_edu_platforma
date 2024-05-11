@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import savodxon from '../../assets/images/Main/savodxon.png'
 import AccordionTwoOne from "../../Components/Accordion/AccordionTwoOne";
+import foundation from "../../assets/images/Main/foundation.png"
 
 
 export default function ProgrammCourse(){
@@ -11,7 +12,7 @@ export default function ProgrammCourse(){
                 <h1 className=" px-5 md:px-10 py-5 font-[600]">Kurs dasturi</h1>
             </div>
             <div className="lg:flex justify=-between m-5">
-                <div className="w-full h-[77.5vh] md:h-[82.5vh] lg:h-[73.5vh] xl:h-[78vh] 2xl:h-[83vh] rounded-lg overflow-y-scroll flex flex-col gap-4 bg-white p-5">
+                <div className="w-full h-[77.5vh] md:h-[52.5vh] lg:h-[73.5vh] xl:h-[78vh] 2xl:h-[83vh] rounded-lg overflow-y-scroll flex flex-col gap-4 bg-white p-5 ">
                     <div>
                         <div className="bg-[#F9F9F9] p-5 grid md:flex gap-6 justify-between py-5 px-8 rounded-lg items-center">
                             <img src={savodxon} alt="Savodxonlik" className="w-[200px] mx-auto md:hidden" />
@@ -50,6 +51,29 @@ export default function ProgrammCourse(){
                         </div>
                         <div>
                             <AccordionTwoOne/>
+                        </div>
+                    </div>
+                </div>
+                <div className="p-5 my-5 lg:my-0 lg:ml-2 lg:w-[350px] bg-white rounded-lg md:h-[30vh] md:overflow-y-scroll lg:h-[73.5vh] xl:h-[78vh] 2xl:h-full 2xl:overflow-y-hidden">
+                    <div className="bg-[#F9F9F9] p-5">
+                        <h1 className='text-gray-400 font-[700] text-[14px]'>Tavsiya qilamiz</h1>
+                        <img src={foundation} alt="" className="w-[200px] mx-auto my-[20px]"/>
+                        <p className="text-[14px] font-[700] my-[20px]">Foundationni o`rganish uchun manbaalar</p>
+                        <a href="#" className="font-[600] text-[14px] text-[#77BF44]">Batafsil</a>
+                    </div>
+                    <div className="bg-[#F9F9F9] p-5 mt-5">
+                        <div className="flex items-center gap-4">
+                            <i className='bx bx-code-block text-[24px] bg-[#77BF44] p-2 rounded-full text-white'></i>
+                            <div>
+                                <h2>Kompyuter savodxonligi kursi</h2>
+                                <a href="#" className="font-[600] text-[14px] text-[#77BF44]">Boshqa</a>
+                            </div>
+                        </div>
+                        <div className="mt-5">
+                            <h1 className="text-[10px]">4% videodarslar yakunlangan</h1>
+                            <div className="w-full h-[5px] rounded-full bg-neutral-200 dark:bg-neutral-600">
+                                <div className="h-[5px] bg-[#77BF44] rounded-full" style={{ width: "4%" }}></div>
+                            </div>
                         </div>
                     </div>
                 </div>
