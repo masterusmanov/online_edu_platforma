@@ -107,7 +107,7 @@ function Monitoring() {
                         <p className="font-[700] text-[11px]">Foundation kursini o`rganish uchun bepul manbalar</p>
                         <a href="#" className="text-[11px] text-[#77BF44]">Batafsil</a>
                     </div>
-                    <div className="grid gap-3 bg-[#F7F7F5] p-2 rounded-lg">
+                    <div className="grid gap-3 bg-[#F7F7F5] p-2 rounded-lg cursor-pointer">
                         <div className="flex gap-2">
                             <i className='bx bx-code-block text-[#77BF44]'></i>
                             <div>
