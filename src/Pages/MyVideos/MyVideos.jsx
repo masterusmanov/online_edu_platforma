@@ -57,7 +57,7 @@ export default function MyVideos(){
                         <div>
                             <h1 className='font-[700] text-[20px]'>So‘nggi ko‘rilgan videolar</h1>
                         </div>
-                        <div className="lg:flex items-center gap-1 text-blue-500">
+                        <div className="lg:flex items-center gap-1 text-[#77BF44]">
                             <p>Barcha videolarni ko`rish</p>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ export default function MyVideos(){
                                     <div>
                                         <h1 className="text-[10px]">{item.width} videodarslar yakunlangan</h1>
                                         <div className="w-full h-[5px] rounded-full bg-neutral-200 dark:bg-neutral-600">
-                                            <div className="h-[5px] bg-blue-500 rounded-full" style={{ width: `${item.width}` }}></div>
+                                            <div className="h-[5px] bg-[#77BF44] rounded-full" style={{ width: `${item.width}` }}></div>
                                         </div>
                                     </div>
                                 </div>
@@ -95,7 +95,7 @@ export default function MyVideos(){
                         <h1 className='font-[700] text-[20px]'>Saqlangan videolar</h1>
                     </div>
                     <div className='mt-[35px] grid gap-6'>
-                        <h1 className='text-center text-blue-500 font-[700]'>Hech qanday saqlangan videolar topilmadi</h1>
+                        <h1 className='text-center text-[#77BF44] font-[700]'>Hech qanday saqlangan videolar topilmadi</h1>
                         <img src={box} alt="" className='mx-auto md:w-[200px]'/>
                     </div>
                 </div>
