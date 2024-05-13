@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Video from '../../assets/images/Main/Video.png';
-import foundation from '../../assets/images/Main/foundation.jpg';
-import react from '../../assets/images/Main/reactjs.png';
-import python from '../../assets/images/Main/django.jpg';
+import foundation from '../../assets/images/Main/foundation.png';
+import react from '../../assets/images/Main/frontend.png';
+import python from '../../assets/images/Main/django.png';
 import design from '../../assets/images/Main/design.png';
-import komp from '../../assets/images/Main/komp.png'
+import kotlin from '../../assets/images/Main/Kotlin.png';
 
 
 function Monitoring() {
@@ -34,6 +34,12 @@ function Monitoring() {
             title: "Dasturlash",
             description: "Backend"
         },
+        {
+            id: 5,
+            img: kotlin,
+            title: "Dasturlash",
+            description: "Mobil dasturlash"
+        }
         
     ];
     return(
@@ -41,7 +47,8 @@ function Monitoring() {
             <div className="bg-white h-[50px] flex items-center">
                 <h1 className=" px-5 md:px-10 py-5 font-[600]">Bosh sahifa</h1>
             </div>
-            <div className="md:flex gap-4">
+           <div className="md:max-h-[85vh] lg:max-h-[80vh] xl:max-h-[82vh] 2xl:max-h-[85vh] overflow-y-scroll border border-red-500">
+           <div className="md:flex">
                 <div className="md:w-[70%] m-5 md:ml-5 md:my-5 p-5 bg-white  rounded-md gap-4">
                     <div className="grid gap-2 lg:flex  md:gap-0 items-center justify-between text-[14px] lg:text-[12px]">
                         <div>
@@ -96,7 +103,7 @@ function Monitoring() {
                 <div className=" w-[30%] my-5 mr-2 p-3 hidden md:grid bg-white gap-4 rounded-md">
                     <div className="grid gap-3 lg:gap-2 bg-[#F7F7F5] p-2 rounded-lg">
                         <h1 className="text-gray-500 text-[12px]">Tavsiya etamiz:</h1>
-                        <img src={foundation} alt="" className="w-[150px] lg:w-[120px] xl:w-[180px] mx-auto rounded-lg 2xl:w-full"/>
+                        <img src={foundation} alt="" className="w-[150px] lg:w-[80px] xl:w-[100px] mx-auto rounded-lg"/>
                         <p className="font-[700] text-[11px]">Foundation kursini o`rganish uchun bepul manbalar</p>
                         <a href="#" className="text-[11px] text-[#77BF44]">Batafsil</a>
                     </div>
@@ -123,22 +130,23 @@ function Monitoring() {
                         <h1>Sizga tavsiya qilamiz</h1>
                     </div>
                     <div className="lg:flex items-center gap-1 text-[#77BF44]">
-                        <p>Barcha kurslarni ko`rish</p>
+                        <a href="/courses">Barcha kurslarni ko`rish</a>
                     </div>
                 </div>
-                <div className=" grid justify-center md:flex flex-wrap md:justify-start gap-4 mt-[20px] md:max-h-[28vh] md:overflow-y-auto lg:gap-4 lg:justify-center xl:justify-start xl:max-h-[165px] xl:overflow-y-auto 2xl:max-h-[245px] 2xl:overflow-y-auto">
-                    {cards.map(item => (
-                        // eslint-disable-next-line react/jsx-key
-                        <div className="md:w-[150px] border grid gap-4 bg-[#F7F7F5] p-3 rounded-lg lg:flex items-center lg:w-[185px] lg:gap-1 xl:w-[300px] xl:gap-6 2xl:grid 2xl:w-[370px] hover:shadow-xl hover:shadow-gray-500">
-                            <img src={item.img} alt="" className="rounded-lg md:w-[150px] md:h-[80px] lg:w-[90px] lg:h-[50px] object-cover lg:object-fill xl:w-[130px] xl:h-[60px] 2xl:w-[200px] 2xl:h-[120px] 2xl:mx-auto"/>
-                            <div className="2xl:w-[120px] 2xl:text-center">
-                                <h1 className={`font-[700] text-[18px] lg:text-[12px] xl:text-[14px] 2xl:text-[18px] ${item.title === 'Dasturlash' ? 'bg-black text-white rounded-lg py-1 px-3 lg:px-1 xl:px-3' : 'bg-green-500 text-white rounded-lg py-1 px-3'}`}>{item.title}</h1>
-                                <p className="font-[600] text-[16px] lg:text-[13px] 2xl:text-[16px]">{item.description}</p>
+                <div className=" grid justify-center md:flex flex-wrap gap-4 mt-[20px] overflow-y-auto md:max-h-[43.5vh] lg:max-h-[25.5vh] xl:max-h-[38vh] 2xl:max-h-[50vh] xl:justify-start 2xl:gap-2">
+                        {cards.map(item => (
+                            // eslint-disable-next-line react/jsx-key
+                            <div className="my-[20px] w-[250px] md:w-[200px] border grid gap-4 bg-[#F7F7F5] p-3 rounded-lg lg:w-[250px] xl:w-[220px] 2xl:w-[300px] hover:shadow-xl hover:shadow-gray-500">
+                                <img src={item.img} alt="" className="rounded-lg w-[200px] md:w-[150px] xl:w-full mx-auto xl:p-5 2xl:p-10"/>
+                                <div>
+                                    <h1 className={`font-[700] text-[18px] lg:text-[14px] 2xl:text-[18px] ${item.title === 'Dasturlash' ? 'bg-black text-white rounded-lg py-1 px-3 lg:px-1 xl:px-3' : 'bg-green-500 text-white rounded-lg py-1 px-3'}`}>{item.title}</h1>
+                                    <p className="font-[600] text-[16px] lg:text-[13px] 2xl:text-[16px]">{item.description}</p>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
             </div>
+           </div>
         </div>
     )
 }
