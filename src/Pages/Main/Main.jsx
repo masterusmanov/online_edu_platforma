@@ -47,9 +47,9 @@ function Monitoring() {
             <div className="bg-white h-[50px] flex items-center">
                 <h1 className=" px-5 md:px-10 py-5 font-[600]">Bosh sahifa</h1>
             </div>
-           <div className="md:max-h-[85vh] lg:max-h-[80vh] xl:max-h-[82vh] 2xl:max-h-[85vh] overflow-y-scroll border border-red-500">
+           <div className="md:max-h-[85vh] lg:max-h-[80vh] xl:max-h-[82vh] 2xl:max-h-[85vh] overflow-y-scroll">
            <div className="md:flex">
-                <div className="md:w-[70%] m-5 md:ml-5 md:my-5 p-5 bg-white  rounded-md gap-4">
+                <div className="md:w-[70%] m-5 md:ml-5 md:my-5 p-5 bg-white  rounded-md gap-4 2xl:w-[80%]">
                     <div className="grid gap-2 lg:flex  md:gap-0 items-center justify-between text-[14px] lg:text-[12px]">
                         <div>
                             <h1>So`ngi ko`rilgan</h1>
@@ -100,7 +100,7 @@ function Monitoring() {
                         <img src={komp} alt="img" className="w-[180px] mx-auto lg:w-[220px] xl:w-[250px] 2xl:w-[350px]"/>
                     </div>
                 </div> */}
-                <div className=" w-[30%] my-5 mr-2 p-3 hidden md:grid bg-white gap-4 rounded-md">
+                <div className=" w-[30%] my-5 mr-2 p-3 hidden md:grid bg-white gap-4 rounded-md 2xl:w-[20%]">
                     <div className="grid gap-3 lg:gap-2 bg-[#F7F7F5] p-2 rounded-lg">
                         <h1 className="text-gray-500 text-[12px]">Tavsiya etamiz:</h1>
                         <img src={foundation} alt="" className="w-[150px] lg:w-[80px] xl:w-[100px] mx-auto rounded-lg"/>
